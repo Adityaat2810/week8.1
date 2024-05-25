@@ -27,16 +27,50 @@ const App = () => {
         <div style={{backgroundColor:'red'}}>
           HITHERE  
         </div>
-      
+
         <div style={{backgroundColor:'green'}}>
           HITHERE
         </div>
-         
+
         <div style={{backgroundColor:'pink'}}>
           HITHERE
         </div>
-      
+
     </div>
+
+{/* same thing using tailwind */}
+  <div className="flex">
+
+    <div style={{backgroundColor:'red'}}>
+      HITHERE  
+    </div>
+
+    <div style={{backgroundColor:'green'}}>
+      HITHERE
+    </div>
+
+    <div style={{backgroundColor:'pink'}}>
+      HITHERE
+    </div>
+
+  </div>
+
+  {/* same thing using tailwind */}
+  <div className="flex justify-center">
+
+    <div className='bg-red-500'>
+      HITHERE  
+    </div>
+
+    <div  className='bg-green-500'>
+      HITHERE
+    </div>
+
+    <div  className='bg-yellow-500'>
+      HITHERE
+    </div>
+
+  </div>
    
     </>
   )
