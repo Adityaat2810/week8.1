@@ -3,41 +3,28 @@ import React from 'react'
 const App = () => {
   return (
     <>
-      {/* grids of equal width */}
+    {/*  above md breakpoint it becomes blue below it it is red */}
+    {/* PS ==
+     three equal childer first 
+     if i go below md it will go one below the other 
+    */}
 
-      <div className='grid grid-cols-3'>
 
-        <div className='bg-red-500'>
-          HITHERE
-        </div>
 
-        <div className='bg-yellow-500'>
-          HITHERE
-        </div>
+    {/* <div className='bg-red-500 md:bg-blue-500'>
+      hii there
 
-        <div className='bg-green-500'>
-          HITHERE
-        </div>
+    </div> */}
 
-      </div>
+    <div className='grid grid-cols-1 md:grid-cols-3'>
 
-      {/* grids of unequal width */}
+      <div className='bg-red-500'>hi there 1</div>
+      <div className='bg-yellow-500'>hi there 2</div>
+      <div className='bg-green-500'>hi there 3</div>
 
-      <div className='grid grid-cols-12'>
+    </div>
 
-        <div className='bg-red-500 col-span-5'>
-          HITHERE
-        </div>
 
-        <div className='bg-yellow-500 col-span-2'>
-          HITHERE
-        </div>
-
-        <div className='bg-green-500 col-span-5'>
-          HITHERE
-        </div>
-
-      </div>
 
 
     </>
