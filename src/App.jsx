@@ -1,77 +1,45 @@
 import React from 'react'
 
 const App = () => {
-  // parent flex with three children right next to ecah other
   return (
     <>
-    <div style={{display:'flex'}}>
+      {/* grids of equal width */}
 
-      <div style={{backgroundColor:'red'}}>
-        HITHERE  
-      </div>
+      <div className='grid grid-cols-3'>
 
-      <div style={{backgroundColor:'green'}}>
-        HITHERE
-      </div>
-
-      <div style={{backgroundColor:'pink'}}>
-        HITHERE
-      </div>
-
-    </div>
-
-
-    {/* parent with three childer right next to each other palced in end */}
-    <div style={{display:'flex',justifyContent:'flex-end'}}>
-
-        <div style={{backgroundColor:'red'}}>
-          HITHERE  
-        </div>
-
-        <div style={{backgroundColor:'green'}}>
+        <div className='bg-red-500'>
           HITHERE
         </div>
 
-        <div style={{backgroundColor:'pink'}}>
+        <div className='bg-yellow-500'>
           HITHERE
         </div>
 
-    </div>
+        <div className='bg-green-500'>
+          HITHERE
+        </div>
 
-{/* same thing using tailwind */}
-  <div className="flex">
+      </div>
 
-    <div style={{backgroundColor:'red'}}>
-      HITHERE  
-    </div>
+      {/* grids of unequal width */}
 
-    <div style={{backgroundColor:'green'}}>
-      HITHERE
-    </div>
+      <div className='grid grid-cols-12'>
 
-    <div style={{backgroundColor:'pink'}}>
-      HITHERE
-    </div>
+        <div className='bg-red-500 col-span-5'>
+          HITHERE
+        </div>
 
-  </div>
+        <div className='bg-yellow-500 col-span-2'>
+          HITHERE
+        </div>
 
-  {/* same thing using tailwind */}
-  <div className="flex justify-center">
+        <div className='bg-green-500 col-span-5'>
+          HITHERE
+        </div>
 
-    <div className='bg-red-500'>
-      HITHERE  
-    </div>
+      </div>
 
-    <div  className='bg-green-500'>
-      HITHERE
-    </div>
 
-    <div  className='bg-yellow-500'>
-      HITHERE
-    </div>
-
-  </div>
-   
     </>
   )
 }
